@@ -2,7 +2,7 @@ import axios from 'axios'
 import { toast } from 'react-toastify'
 
 const axiosClient = axios.create({
-    baseURL: `https://devisapi.boxnews.com/api`
+    baseURL: `https://devisapi.boxnews-ci.com/api`
 })
 
 //Request interceptor
