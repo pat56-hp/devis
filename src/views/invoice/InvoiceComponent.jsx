@@ -41,7 +41,7 @@ const InvoiceComponent = ({ facture }) => {
             <Text style={{ fontSize: "22px"}}>Patrick Aimé Kouassi</Text>
             <View style={{display: "flex", flexDirection:"row", gap: "5",justifyContent: "space-between"}}>
                 <Text style={{fontSize: "18px"}}>Facture N° {facture.ref}</Text>
-                <Text style={{padding: "4px", backgroundColor: facture.status == 0 ? 'red' : '#28a745', borderRadius: "4px", color : "#fff", fontSize:"15px",fontWeight: "bolt"}}>{facture.status === 0 ? 'Impayée' : 'Payée'}</Text>
+                <Text style={{padding: "4px", backgroundColor: facture.status == 0 ? 'red' : '#28a745', borderRadius: "4px", color : "#fff", fontSize:"15px",fontWeight: "bolt"}}>{facture.status == 0 ? 'Impayée' : 'Payée'}</Text>
             </View>
         </View>
         <View style={{paddingBottom: "15px", borderBottom: "1px solid #000"}}>

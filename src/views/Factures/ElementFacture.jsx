@@ -47,7 +47,7 @@ export default function ElementFacture({index, setElements, element, setSousTota
             // Calcul du sous-total et du total
             let sousTotal = 0;
             newElements.forEach(element => {
-                sousTotal += element.montant;
+                sousTotal += parseFloat(element.montant);
             });
     
             // Mise à jour des états de sous-total et total

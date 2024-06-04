@@ -234,7 +234,7 @@ export default function FactureForm({indice}) {
             .then(({data}) => {
                 const projects = []
                 data.data.forEach(project => {
-                    if (project.status !== 2) {
+                    if (project.status != 2) {
                         projects.push({
                             value: project.id,
                             label: project.title
