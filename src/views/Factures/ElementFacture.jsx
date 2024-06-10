@@ -37,7 +37,7 @@ export default function ElementFacture({index, setElements, element, setSousTota
             newElements[index][field] = value;
     
             // Mise à jour du montant en fonction de 'qty' ou 'prix'
-            if (field === 'qty' || field === 'prix') {
+            if (field == 'qty' || field == 'prix') {
                 const qty = newElements[index]['qty'];
                 const prix = newElements[index]['prix'];
                 const montant = qty * prix;
@@ -108,7 +108,7 @@ export default function ElementFacture({index, setElements, element, setSousTota
                 <tr>
                     <td colSpan="3" className='pl-0 pb-0'> 
                         <textarea 
-                            value={element.description  === null ? "" : element.description}
+                            value={element.description  == null ? "" : element.description}
                             name="product-description" 
                             className="form-control border-0 p-2" 
                             id="productDescription" 
